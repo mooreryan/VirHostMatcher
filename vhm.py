@@ -46,7 +46,8 @@ if not os.path.exists(tmpDir) :
 filelog = open(os.path.join(tmpDir, 'vhm.log'), 'w')
 
 ## name length ##
-nameLen = 93 - len(options.outDir)
+# Temporarily remove file name length limit
+nameLen = 9999999 # 93 - len(options.outDir)
 #### possibly because of the kmercount folder name for each contig is too long?
 
 
